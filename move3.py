@@ -14,7 +14,7 @@ def list2file(l, name):
             f.write("%s\n" % item)
     return
 
-parent_dir = "/data/gmldata/nyc_objs_organized_1"
+parent_dir = "/data/gmldata/nyc_objs_organized_3"
 mesh_dest_dir = "/data/gmldata/nyc_finished_mesh"
 vox_dest_dir = "/data/gmldata/nyc_finished_binvox"
 
