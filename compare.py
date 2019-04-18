@@ -2,8 +2,12 @@
 ### a program to compare how many files in two directories are the same 
 import os 
 
-d1 = "/media/yuqiong/DATA/city/zurich/zurich_building_objs"
-d2 = "/media/yuqiong/DATA/city/zurich/zurich_new_objs"
+# d1 = "/media/yuqiong/DATA/city/zurich/zurich_building_objs"
+# d2 = "/media/yuqiong/DATA/city/zurich/zurich_new_objs"
+# d1 = "/data/city/nyc/nyc_poly_objs"
+# d2 = "/data/city/nyc/nyc_triangle_objs"
+d1 = "/data/city/zurich/zurich_triangle_objs"
+d2 = "/data/city/zurich/zurich_new_objs"
 
 f1 = os.listdir(d1)
 f2 = os.listdir(d2)
