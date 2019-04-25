@@ -3,7 +3,9 @@
 import os
 from argparse import ArgumentParser
 from collections import deque
-
+from timeit import default_timer as timer
+from datetime import timedelta
+import gc
 
 def parse_obj(path):
     """
@@ -42,6 +44,10 @@ def main():
     files = os.listdir(folder)
     valid_objs = 0
     invalid_objs = 0
+    counter = 0
+    
+    start = timer()
+    
     for file in files:
         path = os.path.join(folder, file)
         all_v, all_f = parse_obj(path)
@@ -49,8 +55,14 @@ def main():
             invalid_objs += 1
         else:
             valid_objs += 1
-    print("Valid objs:\t {0}".format(valid_objs))
-    print("Invalid objs:\t {0}".format(invalid_objs))
+        if counter % 1000 == 0:
+            print("Number of files :\t {0}".format(counter))
+            print("Valid objs:\t {0}".format(valid_objs))
+            print("Invalid objs:\t {0}".format(invalid_objs))
+            end = timer()
+            print("Time elapsed: {0}".format(timedelta(seconds=end-start)))
+            gc.collect()
+        counter += 1
     print("Done!")
     return
 

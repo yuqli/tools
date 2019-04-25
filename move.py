@@ -2,8 +2,10 @@
 import os 
 import shutil
 import time
-
-### this program is to move and rename all building obj files for NYC. There are around one million of them.
+### Purpose of this program is the binvox program crashed as server crashed
+### so some meshes are finished and others unfinished 
+### so we need to move all .binvox files to the other folder 
+### and also the m
 # parent_dir = "/data/gmldata/nyc_objs/"
 def list2file(l, name):
     """
