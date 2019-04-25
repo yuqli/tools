@@ -6,11 +6,11 @@
 
 import os
 
-def list2file(l, name):
+def list2file(l, path):
     """
     output a list to file.
     """
-    with open(name+".txt", 'a+') as f:
+    with open(path, 'a+') as f:
         for item in l:
             f.write("%s\n" % item)
     return
@@ -21,5 +21,5 @@ all_objs = [x for x in all_files if x[-4:] == ".obj"]
 all_binvox = [x for x in all_files if x[-4:] != ".obj"]
 unfinished_objs = [x for x in all_objs if x.split(".")[0]+".binvox" not in all_binvox]
 
-list2file(unfinished_objs, "undone_objs")
-
+save_dir = "/data/city/nyc/"
+list2file(unfinished_objs, os.path.join(save_dir, "undone_objs.txt"))
