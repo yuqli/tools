@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="051d2b8c-c7b3-404e-98ec-61f1773db5d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewpcd.py" beforeDir="false" afterPath="$PROJECT_DIR$/viewpcd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vis_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vis_list.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filter_done_binvox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="152">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -25,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/filter_done_binvox_zurich.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="532">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -54,6 +55,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -65,7 +67,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -102,18 +103,19 @@
       <updated>1556155064230</updated>
       <workItem from="1556155065559" duration="2295000" />
       <workItem from="1556202692309" duration="1424000" />
+      <workItem from="1556641144867" duration="919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3719000" />
+    <option name="totallyTimeSpent" value="4638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4955414" visible="true" weight="0.19424461" />
-      <window_info id="Structure" order="1" sideWeight="0.5044586" side_tool="true" visible="true" weight="0.19424461" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49367088" visible="true" weight="0.19645822" />
+      <window_info id="Structure" order="1" sideWeight="0.5063291" side_tool="true" visible="true" weight="0.19645822" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -127,7 +129,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.1981614" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.19305414" />
       <window_info anchor="right" x="0" y="0" width="413" height="884" id="Documentation" order="0" side_tool="true" visible="true" weight="0.17965727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -147,17 +149,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filter_done_binvox_zurich.py">
+    <entry file="file://$PROJECT_DIR$/filter_done_binvox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="152">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filter_done_binvox.py">
+    <entry file="file://$PROJECT_DIR$/filter_done_binvox_zurich.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="532">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
