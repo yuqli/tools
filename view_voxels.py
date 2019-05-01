@@ -58,7 +58,9 @@ def plot_3D_voxel(v):
 # path = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample_64/gml_HUYQNNGN9TJJR5A243H07CIRB08EYJEXTUE3.npy"
 
 
-path = "/media/yuqiong/DATA/voxRefactor/sample/test.bin"
+# path = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample_64_cuda/gml_I237IXUULHQUTFNYM5KJLQTNOF0XYF1D36PG.bin"
+# path = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample_64_cuda/gml_ZZH8UVEPJGVEON2A6OR03XP5HNZXYBKAHH7H.bin"
+path = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample_64_cuda/gml_ZYGT0MRS1VZ08H93AGAJ043493KLIFP82Q1B.bin"
 data = read_bin(path)
 print(data)
 print(data.shape)
