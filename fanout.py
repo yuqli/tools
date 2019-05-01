@@ -26,7 +26,7 @@ root = "/data/city/nyc/nyc_poly_binvox"
 dst_dir = "/data/city/nyc/nyc_poly_binvox"+"_names"  # place to save .txt files
 all_files = os.listdir(root)
 num_children = 24   # number of copies to make
-children = chunkify(all_files)
+children = chunkify(all_files, num_children)
 
 total_path = os.path.join(dst_dir, "all.txt")   # path to store all results
 start = time.time()
