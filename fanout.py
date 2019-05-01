@@ -24,6 +24,9 @@ def chunkify(lst,n):
 
 root = "/data/city/nyc/nyc_poly_binvox"
 dst_dir = "/data/city/nyc/nyc_poly_binvox"+"_names"  # place to save .txt files
+if not os.path.exists(dst_dir):
+    os.makedirs(dst_dir)
+
 all_files = os.listdir(root)
 num_children = 24   # number of copies to make
 children = chunkify(all_files, num_children)
