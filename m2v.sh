@@ -2,6 +2,11 @@
 shopt -s nullglob
 Xvfb :99 -screen 0 640x480x24 & 
 export DISPLAY=:99
-for i in /data/city/nyc/nyc_poly_objs/*.obj; do
-    ./binvox -c -pb -d 256 $i
-done 
+while IFS='' read -r line || [[ -n "$line" ]]; do
+    # echo "Text read from file: $line"
+    ./binvox -c -pb -d 256 "/data/city/nyc/nyc_poly_objs/"$line
+done < "/data/city/nyc/undone_objs.txt" 
+
+# for i in /data/city/nyc/nyc_poly_objs/*.obj; do
+#    ./binvox -c -pb -d 256 $i
+# done 

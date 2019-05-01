@@ -23,10 +23,10 @@ def chunkify(lst,n):
     return [lst[i::n] for i in range(n)]
 
 
-# root = "/data/city/nyc/nyc_poly_binvox"
-# dst_dir = "/data/city/nyc/nyc_poly_binvox"+"_names"  # place to save .txt files
-root = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample"
-dst_dir = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample"+"_names"  # place to save .txt files
+root = "/data/city/nyc/nyc_poly_binvox"
+dst_dir = "/data/city/nyc/nyc_poly_binvox"+"_names"  # place to save .txt files
+#root = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample"
+#dst_dir = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample"+"_names"  # place to save .txt files
 if not os.path.exists(dst_dir):
     os.makedirs(dst_dir)
 
