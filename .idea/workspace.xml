@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/fanout.py" line="22" mnemonic="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="051d2b8c-c7b3-404e-98ec-61f1773db5d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dilate_binvox.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fanout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view_voxels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resolute_binvox.py" beforeDir="false" afterPath="$PROJECT_DIR$/resolute_binvox.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viewvox" beforeDir="false" afterPath="$PROJECT_DIR$/viewvox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fanout.py" beforeDir="false" afterPath="$PROJECT_DIR$/fanout.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fanout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="418">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding>
                 <element signature="e#145#154#0" expanded="true" />
               </folding>
@@ -160,12 +156,12 @@
       <workItem from="1556155065559" duration="2295000" />
       <workItem from="1556202692309" duration="1424000" />
       <workItem from="1556641144867" duration="10749000" />
-      <workItem from="1556673353126" duration="3606000" />
+      <workItem from="1556673353126" duration="4093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18074000" />
+    <option name="totallyTimeSpent" value="18561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -281,8 +277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fanout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="418">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
             <element signature="e#145#154#0" expanded="true" />
           </folding>

@@ -18,17 +18,21 @@ def list2file(l, path):
             f.write("%s\n" % item)
     return
 
+
+def chunkify(lst,n):
+    return [lst[i::n] for i in range(n)]
+
 root = "/data/city/nyc/nyc_poly_binvox"
 dst_dir = "/data/city/nyc/nyc_poly_binvox"+"_names"  # place to save .txt files
 all_files = os.listdir(root)
 num_children = 24   # number of copies to make
-children = np.split(all_files, num_children)
+children = chunkify(all_files)
 
 total_path = os.path.join(dst_dir, "all.txt")   # path to store all results
 start = time.time()
 for i in range(num_children):
     print("Child : {0}. Elapsed time: {1:.2f} min...".format(i, (time.time() - start) / 60))
-    child = children[i].tolist()
+    child = children[i]
     npath = os.path.join(dst_dir, "c{0}.txt".format(i))
     list2file(child, total_path)
     list2file(child, npath)
