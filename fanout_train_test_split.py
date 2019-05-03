@@ -59,6 +59,7 @@ def train_test_split(l):
 
 with open("common.txt", "r") as f:
     all = f.readlines()
+all = [x.strip() for x in all]
 # all_files = os.listdir(root)
 train, test = train_val_test_split(all_files)
 
