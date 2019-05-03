@@ -18,8 +18,8 @@ def list2file(l, path):
             f.write("%s\n" % item)
     return
 
-root = "/data/city/nyc/vox64"
-dst_dir = "/data/city/nyc/vox64"+"_names"  # place to save .txt files
+root = "/data/city/nyc/pcd"
+dst_dir = "/data/city/nyc/pcd"+"_names"  # place to save .txt files
 if not os.path.exists(dst_dir):
     os.makedirs(dst_dir)
 
