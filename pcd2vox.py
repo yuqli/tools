@@ -1,6 +1,5 @@
 import numpy as np
 import os
-import pptk
 import open3d
 from pyntcloud import PyntCloud
 import matplotlib.pyplot as plt
@@ -66,8 +65,8 @@ def worker(i, dir, dst, children):
 
 
 def main():
-    dir = "/media/yuqiong/DATA/city/shapenet"
-    dst = "/media/yuqiong/DATA/city/shapenet_vox"
+    dir = "/data/city/shapenet"
+    dst = "/data/city/shapenet_vox"
     if not os.path.exists(dst):
         os.mkdir(dst)
 
