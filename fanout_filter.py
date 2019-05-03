@@ -36,7 +36,7 @@ done_bin = os.listdir(done)
 done_binvox = [x+"vox" for x in done_bin]   # list of names 
 todo_binvox = list(set(all_binvox) - set(done_binvox))
 
-num_children = 6   # number of copies to make
+num_children = 3   # number of copies to make
 children = chunkify(todo_binvox, num_children)
 
 total_path = os.path.join(dst_dir, "all.txt")   # path to store all results

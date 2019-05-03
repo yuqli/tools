@@ -34,10 +34,8 @@ def train_val_test_split(l):
     val = [l[i] for i in val_id]
     return train, val, test
 
-root = "/data/city/nyc/nyc_poly_binvox"
-dst_dir = "/data/city/nyc/nyc_poly_binvox"+"_train_test_split"  # place to save .txt files
-# root = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample"
-# dst_dir = "/media/yuqiong/DATA/city/nyc/nyc_poly_binvox_sample"+"_names"  # place to save .txt files
+root = "/data/city/nyc/vox64"
+dst_dir = root + "_train_test_split"  # place to save .txt files
 if not os.path.exists(dst_dir):
     os.makedirs(dst_dir)
 
