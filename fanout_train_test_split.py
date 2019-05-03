@@ -43,11 +43,10 @@ def train_test_split(l):
     """
     np.random.seed(1234)
     perm = np.random.permutation(len(l))
-    train_id, val_id, test_id = np.split(perm, [int(.7 * len(l)), int(.9 * len(l))])
+    train_id, test_id = np.split(perm, [int(.85 * len(l))])
     train = [l[i] for i in train_id]
     test = [l[i] for i in test_id]
-    val = [l[i] for i in val_id]
-    return train, val, test
+    return train, test
 
 
 # root = "/data/city/nyc/nyc_poly_binvox"
@@ -57,20 +56,22 @@ def train_test_split(l):
 # if not os.path.exists(dst_dir):
 #     os.makedirs(dst_dir)
 
-with open("common.txt", "r") as f:
+with open("common100000.txt", "r") as f:
     all = f.readlines()
 all = [x.strip() for x in all]
 # all_files = os.listdir(root)
-train, test = train_val_test_split(all_files)
+ids = np.random.choice(len(all), 60000, replace=False)
+random_sample = [all[x] for x in ids]
+train, test = train_test_split(random_sample)
 
-npath = os.path.join(dst_dir, "train.txt")
+npath = os.path.join( "all.txt")
+list2file(random_sample, npath)
+print("Random Sample done!")
+
+npath = os.path.join("train.txt")
 list2file(train, npath)
 print("Train done!")
 
-npath = os.path.join(dst_dir, "val.txt")
-list2file(val, npath)
-print("Val done!")
-
-npath = os.path.join(dst_dir, "test.txt")
+npath = os.path.join("test.txt")
 list2file(test, npath)
 print("Test done!")
