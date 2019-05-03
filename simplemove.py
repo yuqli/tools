@@ -6,8 +6,11 @@ import time
 ### so some meshes are finished and others unfinished 
 ### so we need to move all .binvox files to the other folder 
 
-src_dir = "/data/city/shapenet/"
-dst_dir = "/data/city/data"
+# src_dir = "/data/city/shapenet/"
+# dst_dir = "/data/city/data"
+
+src_dir = "/media/yuqiong/DATA/latent_3d_points/data/shape_net_core_uniform_samples_2048"
+dst_dir = "/media/yuqiong/DATA/latent_3d_points/shapenet"
 
 all_sub = os.listdir(src_dir)
 start = time.time()
