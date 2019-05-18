@@ -33,17 +33,22 @@ def main():
     files = os.listdir(folder)
     valid_objs = 0
     invalid_objs = 0
-    res = {}
-    for file in files:
-        res["file"] = file
-        path = os.path.join(folder, file)
+    total = []
+    for i, f in enumerate(files):
+        res = {}
+        if i % 1000 == 0:
+            print("Processing the {0}-th file...\n".format(i))
+            df = pd.DataFrame(total)
+            with open("vertice_result1.csv", 'a') as f:
+                df.to_csv(f, header=True)
+            total = []
+        res["file"] = f
+        path = os.path.join(folder, f)
         all_v, all_f = parse_obj(path)
         res["v"] = len(all_v)
         res["f"] = len(all_f)
+        total.append(res)
     print("Done!")
-    df = pd.DataFrame(res)
-    with open("vertice_result.csv", 'a') as f:
-        df.to_csv(f, header=True)
     return
 
 
