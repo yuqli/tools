@@ -43,10 +43,10 @@ def main():
                 df.to_csv(io, header=True)
             total = []
         res["file"] = f
-        print(folder)
-        print(f)
+        # print(folder)
+        # print(f)
         path = os.path.join(folder, f)
-        print(path)
+        # print(path)
         all_v, all_f = parse_obj(path)
         res["v"] = len(all_v)
         res["f"] = len(all_f)
