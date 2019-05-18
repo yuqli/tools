@@ -36,7 +36,7 @@ def main():
     total = []
     for i, f in enumerate(files):
         res = {}
-        if i % 1000 == 0:
+        if i % 1000 == 0 and i != 0:
             print("Processing the {0}-th file...\n".format(i))
             df = pd.DataFrame(total)
             with open("vertice_result1.csv", 'a') as f:
