@@ -39,8 +39,8 @@ def main():
         if i % 1000 == 0 and i != 0:
             print("Processing the {0}-th file...\n".format(i))
             df = pd.DataFrame(total)
-            with open("vertice_result1.csv", 'a') as f:
-                df.to_csv(f, header=True)
+            with open("vertice_result1.csv", 'a') as io:
+                df.to_csv(io, header=True)
             total = []
         res["file"] = f
         print(folder)
