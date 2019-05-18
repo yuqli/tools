@@ -41,6 +41,9 @@ def main():
         res["v"] = len(all_v)
         res["f"] = len(all_f)
     print("Done!")
+    df = pd.DataFrame(res)
+    with open("vertice_result.csv", 'a') as f:
+        df.to_csv(f, header=True)
     return
 
 
